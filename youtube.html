@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>YouTube.com Clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+  </head>
+
+<body>
+    <header class="header">
+
+      <div class="left_section">
+        <img class="hamburger_menu" src="icons/hamburger-menu.svg">
+        <img class="youtube_logo" src="icons/youtube-logo.svg">
+      </div>
+
+      <div class="middle_section">
+        <input class="search_bar" type="text" placeholder="Search">
+        <button class="search_button">
+          <img class="search_icon" src="icons/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice_button">
+          <img class="voice_icon" src="icons/voice-search-icon.svg">
+          <div class="tooltip">Voice</div>
+        </button>
+      </div>
+
+      <div class="right_section">
+        <div class="upload_icon_container">
+          <img class="upload_icon" src="icons/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
+        <img class="apps_icon" src="icons/youtube-apps.svg">
+        <div class="notifications_container">
+          <img class="notifications_icon" src="icons/notifications.svg">
+          <div class="notifications_count">9</div>
+        </div>
+        <img class="current_user_profile" src="icons/my-channel.jpeg">
+      </div>
+
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar_link">
+        <img src="icons/home.svg">
+        <div>Home</div>
+      </div>
+      <div class="sidebar_link">
+        <img src="icons/explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar_link">
+        <img src="icons/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar_link">
+        <img src="icons/originals.svg">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar_link">
+        <img src="icons/youtube-music.svg">
+        <div>Music</div>
+      </div>
+      <div class="sidebar_link">
+        <img src="icons/library.svg">
+        <div>Library</div>
+      </div>
+      <div class="sidebar_link" id="darkModeToggle">
+        <img src="icons/moon.png">
+        <div>Dark Mode</div>
+      </div>
+
+      <script>
+        document.getElementById("darkModeToggle").addEventListener("click", function() {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
+    
+    </nav>
+  
+  <main>
+    <section class="video_grid">
+      <div class="video_preview">
+        <div class="thumbnail_row">
+          <a href="https://www.youtube.com/watch?v=oXeK-Ly4hPc&t=1s&ab_channel=DlowBeatbox">
+            <img class="thumbnail" src="thumbnails/dlow_reaction.avif">
+          </a>
+          <div class="time">17:21</div>
+        </div>
+  
+        <div class="video_info_grid">
+          <div class="profile_image">
+            <img class="prof_picture" src="thumbnails/dlow_profile.jpg">
+          </div>
+  
+          <div class="video_info">
+            <p class="video_title">
+              A Prodigy Beatbox Battle (Jollux Vs Remix)
+           </p>
+            <p class="video_author">
+            Dlow Beatbox
+            </p>
+            <p class="video_stats">
+            269K views &#8226; 1 year ago
+            </p>
+          </div>
+  
+        </div>
+      </div>
+  
+      <div class="video_preview">
+        <div class="thumbnail_row">
+          <a href="https://www.youtube.com/watch?v=fHI8X4OXluQ&ab_channel=TheWeekndVEVO">
+            <img class="thumbnail" src="thumbnails/weeknd_blinding_lights.avif">
+          </a>
+          <div class="time">3:24</div>
+        </div>
+        
+        <div class="video_info_grid">
+          <div class="profile_image">
+            <img class="prof_picture" src="thumbnails/weeknd_profile.jpg">
+          </div>
+  
+          <div class="video_info">
+            <p class="video_title">
+              The Weeknd - Blinding Lights (Official Audio)
+            </p>
+            <p class="video_author">
+              The Weeknd
+            </p>
+            <p class="video_stats">
+              822M views &#8226; 5 years ago
+            </p>
+          </div>
+  
+        </div>
+      </div>
+  
+      <div class="video_preview">
+        <div class="thumbnail_row">
+          <a href="https://www.youtube.com/watch?v=lCSk-Vb2mO8&ab_channel=Selly">
+            <img class="thumbnail" src="thumbnails/selly.avif">
+          </a>
+          <div class="time">12:38</div>
+        </div>
+  
+        <div class="video_info_grid">
+          <div class="profile_image">
+            <img class="prof_picture" src="thumbnails/selly_profile.jpg">
+          </div>
+  
+          <div class="video_info">
+            <p class="video_title">
+              DAILY LIFE: DE CE SA DEVII MEMBBRU AL CANALULUI? | Toate Beneficiile
+           </p>
+            <p class="video_author">
+            Selly
+            </p>
+            <p class="video_stats">
+            80K views &#8226; 20 hours ago
+            </p>
+          </div>
+  
+        </div>
+      </div>
+  
+      <div class="video_preview">
+        <div class="thumbnail_row">
+          <a href="https://www.youtube.com/watch?v=aVAO6qZJEG8&ab_channel=CageConnor">
+            <img class="thumbnail" src="thumbnails/valheim.avif">
+          </a>
+          <div class="time">26:00</div>
+        </div>
+        
+        <div class="video_info_grid">
+          <div class="profile_image">
+            <img class="prof_picture" src="thumbnails/Valheim_profile.jpg">
+          </div>
+  
+          <div class="video_info">
+            <p class="video_title">
+              WE HAVE MAGIC! + BUILDING OUR FARMLANDS! Modded Valheim EP8
+            </p>
+            <p class="video_author">
+              CageConoor
+            </p>
+            <p class="video_stats">
+              2,1k views &#8226; 3 days ago
+            </p>
+          </div>
+  
+        </div>
+      </div>
+  
+      <div class="video_preview">
+        <div class="thumbnail_row">
+          <a href="https://www.youtube.com/watch?v=BIgGLZ-vkS0&ab_channel=SamSulek">
+            <img class="thumbnail" src="thumbnails/sulek.avif">
+          </a>
+          <div class="time">31:20</div>
+        </div>
+  
+        <div class="video_info_grid">
+          <div class="profile_image">
+            <img class="prof_picture" src="thumbnails/sulek_profile.jpg">
+          </div>
+  
+          <div class="video_info">
+            <p class="video_title">
+              Winter Shredathon Day 107 - Chest
+           </p>
+            <p class="video_author">
+            Sam Sulek
+            </p>
+            <p class="video_stats">
+            470K views &#8226; 5 days ago
+            </p>
+          </div>
+  
+        </div>
+      </div>
+  
+      <div class="video_preview">
+        <div class="thumbnail_row">
+          <a href="https://www.youtube.com/watch?v=sqoOzGMqCQU&ab_channel=OutdoorBoys">
+            <img class="thumbnail" src="thumbnails/alaska.avif">
+          </a>
+          <div class="time">23:47</div>
+        </div>
+        
+        <div class="video_info_grid">
+          <div class="profile_image">
+            <img class="prof_picture" src="thumbnails/Alaska_profile.jpg">
+          </div>
+  
+          <div class="video_info">
+            <p class="video_title">
+              Lost in Alaska - How to NOT Freeze to Death! Winter Survival Camping
+            </p>
+            <p class="video_author">
+              Outdoor Boys
+            </p>
+            <p class="video_stats">
+              27M views &#8226; 1 year ago
+            </p>
+          </div>
+  
+        </div>
+      </div>
+
+      <div class="video_preview">
+        <div class="thumbnail_row">
+          <a href="https://www.youtube.com/watch?v=phaJXp_zMYM&ab_channel=TheNotoriousB.I.G.">
+            <img class="thumbnail" src="thumbnails/biggy.jpg">
+          </a>
+          <div class="time">4:21</div>
+        </div>
+  
+        <div class="video_info_grid">
+          <div class="profile_image">
+            <img class="prof_picture" src="thumbnails/biggy_profile.jpg">
+          </div>
+  
+          <div class="video_info">
+            <p class="video_title">
+              The Notorious B.I.G. - Big Poppa (Official Music Video) [HD]
+           </p>
+            <p class="video_author">
+            The Notorious B.I.G.
+            </p>
+            <p class="video_stats">
+            507M views &#8226; 13 years ago
+            </p>
+          </div>
+  
+        </div>
+      </div>
+  
+      <div class="video_preview">
+        <div class="thumbnail_row">
+          <a href="https://www.youtube.com/watch?v=o1L1EYiobi4&ab_channel=TheCodingSloth">
+            <img class="thumbnail" src="thumbnails/sloth_learn.avif">
+          </a>
+          <div class="time">11.09</div>
+        </div>
+        
+        <div class="video_info_grid">
+          <div class="profile_image">
+            <img class="prof_picture" src="thumbnails/sloth_learn_profile.jpg">
+          </div>
+  
+          <div class="video_info">
+            <p class="video_title">
+              How I Would Learn To Code If I Wasn't An Idiot
+            </p>
+            <p class="video_author">
+              The Coding Sloth
+            </p>
+            <p class="video_stats">
+              230k views &#8226; 1 month ago
+            </p>
+          </div>
+  
+        </div>
+      </div>
+  
+      <div class="video_preview">
+        <div class="thumbnail_row">
+          <a href="https://www.youtube.com/watch?v=jPSqZGsPuD8&ab_channel=DestroyerFGC">
+            <img class="thumbnail" src="thumbnails/flame_fist.avif">
+          </a>
+          <div class="time">22:25</div>
+        </div>
+  
+        <div class="video_info_grid">
+          <div class="profile_image">
+            <img class="prof_picture" src="thumbnails/flame_fist_profile.jpg">
+          </div>
+  
+          <div class="video_info">
+            <p class="video_title">
+              FLAME FIST Liu Kang is BROKEN in MKX! - Mortal Kombat X
+           </p>
+            <p class="video_author">
+            Destroyer FGC
+            </p>
+            <p class="video_stats">
+            81K views &#8226; 2 years ago
+            </p>
+          </div>
+  
+        </div>
+      </div>
+  
+      <div class="video_preview">
+        <div class="thumbnail_row">
+          <a href="https://www.youtube.com/watch?v=Et3aSy28rTQ&ab_channel=JesseJamesWest">
+            <img class="thumbnail" src="thumbnails/james.avif">
+          </a>
+          <div class="time">13:19</div>
+        </div>
+        
+        <div class="video_info_grid">
+          <div class="profile_image">
+            <img class="prof_picture" src="thumbnails/james_profile.jpg">
+          </div>
+  
+          <div class="video_info">
+            <p class="video_title">
+              Training W/ CBum's Coach Hany Rambod
+            </p>
+            <p class="video_author">
+              Jesse James West
+            </p>
+            <p class="video_stats">
+              1.4M views &#8226; 1 year ago
+            </p>
+          </div>
+  
+        </div>
+      </div>
+  
+      <div class="video_preview">
+        <div class="thumbnail_row">
+          <a href="https://www.youtube.com/watch?v=sL1UPpgBH7I&ab_channel=PewDiePie">
+            <img class="thumbnail" src="thumbnails/pewdiepie.avif">
+          </a>
+          <div class="time">16:45</div>
+        </div>
+  
+        <div class="video_info_grid">
+          <div class="profile_image">
+            <img class="prof_picture" src="thumbnails/pewdiepie_profile.jpg">
+          </div>
+  
+          <div class="video_info">
+            <p class="video_title">
+              I Found My Wife's Meme Folder....
+           </p>
+            <p class="video_author">
+            PewDiePie
+            </p>
+            <p class="video_stats">
+            578K views &#8226; 1 day ago
+            </p>
+          </div>
+  
+        </div>
+      </div>
+  
+      <div class="video_preview">
+        <div class="thumbnail_row">
+          <a href="https://www.youtube.com/watch?v=LBIoYGBknpY&t=1s&ab_channel=MattStonie">
+          <img class="thumbnail" src="thumbnails/matt.avif">
+          </a>
+          <div class="time">8:04</div>
+        </div>
+        
+        <div class="video_info_grid">
+          <div class="profile_image">
+            <img class="prof_picture" src="thumbnails/matt_profile.jpg">
+          </div>
+  
+          <div class="video_info">
+            <p class="video_title">
+              Eating Happy Meals until I get EVERY CARD!! (McDonald's x Pokemon 2025)
+            </p>
+            <p class="video_author">
+              Matt Stonie
+            </p>
+            <p class="video_stats">
+              728k views &#8226; 3 days ago
+            </p>
+          </div>
+  
+        </div>
+      </div>
+    </section>
+
+  </main>  
+</body>
+</html>

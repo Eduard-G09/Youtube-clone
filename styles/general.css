@@ -1,0 +1,36 @@
+p {
+  font-family: Roboto, Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body {
+  margin: 0;
+  padding-top: 90px;
+  padding-left: 120px;
+  padding-right: 30px;
+  padding-bottom: 100px;
+  background-color: rgb(250, 245, 245);
+  transition: background-color 0.15s ease;
+}
+
+.dark-mode {
+  background-color: #222;;
+  color: white;
+}
+
+.dark-mode .sidebar_link {
+  background-color: #222;
+}
+
+.dark-mode .sidebar {
+  background-color: #222;
+}
+
+.dark-mode .header {
+  background-color: #222;
+}
+
+.dark-mode .sidebar_link {
+  background-color: #222;
+}
